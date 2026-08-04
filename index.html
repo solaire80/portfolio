@@ -3,735 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Messaoudi Moncef - Cybersecurity Student and Beginner SOC Analyst Portfolio. Specialized in blue team operations, incident response, network traffic analysis, and security tools.">
-    <meta name="keywords" content="Messaoudi Moncef, Cybersecurity, SOC Analyst, Blue Team, Incident Response, Algeria, Portfolio, Wireshark, Nmap, Pentesting, Linux, CTF">
-    <meta name="author" content="Messaoudi Moncef">
+    <meta name="description" content="Moncef Messaoudi — Junior SOC Analyst Portfolio. Highlighting hands-on cybersecurity projects, threat detection engineering, and SIEM deployment.">
+    <title>Moncef Messaoudi — Junior SOC Analyst</title>
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Messaoudi Moncef | Cybersecurity Student & SOC Analyst">
-    <meta property="og:description" content="Cybersecurity portfolio highlighting SOC analysis, blue team projects, network security, and incident response labs.">
-    <meta property="og:image" content="images/avatar.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Messaoudi Moncef | Cybersecurity Student & SOC Analyst">
-    <meta property="twitter:description" content="Cybersecurity portfolio highlighting SOC analysis, blue team projects, network security, and incident response labs.">
-    <meta property="twitter:image" content="images/avatar.png">
-
-    <title>Messaoudi Moncef | Cybersecurity Student & SOC Analyst</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom Cursor Glow Background -->
-    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Navigation Header -->
-    <header class="header">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-terminal">&gt;_</span> MONCEF<span class="logo-dot">.</span>SEC
-            </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="navbar" id="navbar">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#labs" class="nav-link">Labs</a>
-                <a href="#contact" class="nav-link nav-btn">Get In Touch</a>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="wrap">
+            <nav>
+                <a href="#hero" class="logo" aria-label="Moncef Security Home">moncef<span>.</span>sec</a>
+                <div class="navlinks">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certs">Certifications</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#writeups">Write-ups</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact" class="cta">Contact</a>
+                </div>
             </nav>
-
-            <!-- Mobile Menu Toggle Button -->
-            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
         </div>
     </header>
 
-    <!-- Mobile Drawer Navigation -->
-    <div class="mobile-drawer" id="mobileDrawer">
-        <nav class="mobile-nav">
-            <a href="#hero" class="mobile-nav-link">Home</a>
-            <a href="#about" class="mobile-nav-link">About</a>
-            <a href="#skills" class="mobile-nav-link">Skills</a>
-            <a href="#projects" class="mobile-nav-link">Projects</a>
-            <a href="#labs" class="mobile-nav-link">Labs &amp; Certs</a>
-            <a href="#contact" class="mobile-nav-link">Contact</a>
-        </nav>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-container container">
-            <div class="hero-content reveal">
-                <div class="hero-tag">
-                    <span class="tag-ping"></span>
-                    <span class="tag-text">Active Security Explorer</span>
-                </div>
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Messaoudi Moncef</span>
-                </h1>
-                <h2 class="hero-subtitle">
-                    <span class="typing-prefix">I am a </span><span id="typewriter" class="typing-text"></span><span class="cursor-blink">|</span>
-                </h2>
-                <p class="hero-description">
-                    Passionate about blue team operations, Security Operations Center (SOC) analysis, network monitoring, and incident response. Dedicated to continuous learning through hands-on labs and CTFs.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fa-solid fa-code-branch"></i> View Projects
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fa-solid fa-envelope"></i> Contact Me
-                    </a>
-                    <a href="#" class="btn btn-tertiary" id="downloadCVBtn">
-                        <i class="fa-solid fa-file-pdf"></i> Resume <span class="cv-status">(Preparing)</span>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual reveal">
-                <div class="visual-wrapper">
-                    <!-- Glassmorphic Cyber Shield / Terminal Visualizer -->
-                    <div class="cyber-shield-card">
-                        <div class="shield-header">
-                            <span class="dot-red"></span>
-                            <span class="dot-yellow"></span>
-                            <span class="dot-green"></span>
-                            <span class="terminal-title">moncef@soc-analyst:~</span>
-                        </div>
-                        <div class="shield-body">
-                            <div class="terminal-line"><span class="t-prompt">$</span> whoami</div>
-                            <div class="terminal-output">messaoudi_moncef</div>
-                            <div class="terminal-line"><span class="t-prompt">$</span> cat goal.txt</div>
-                            <div class="terminal-output text-cyan">"Defend systems, investigate incidents, analyze logs, secure the infrastructure."</div>
-                            <div class="terminal-line"><span class="t-prompt">$</span> status --active</div>
-                            <div class="terminal-output text-green">[OK] Learning CompTIA Security+</div>
-                            <div class="terminal-output text-green">[OK] Building Blue Team Home Labs</div>
-                            <div class="terminal-line"><span class="t-prompt">$</span> <span class="block-cursor"></span></div>
-                        </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="wrap hero-wrap">
+                <div class="hero-content">
+                    <div class="status-pill">
+                        <span class="dot"></span> 
+                        <span>Open to junior SOC roles &amp; internships</span>
                     </div>
-                    <!-- Ambient glows behind shield -->
-                    <div class="glow-sphere glow-blue"></div>
-                    <div class="glow-sphere glow-cyan"></div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="scroll-arrow" aria-label="Scroll Down">
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section section-padding">
-        <div class="container">
-            <div class="section-header center reveal">
-                <span class="section-tag">01 / Profile</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="section-underline"></div>
-            </div>
-            
-            <div class="about-grid">
-                <!-- Bio & Motivation -->
-                <div class="about-info card reveal">
-                    <h3 class="card-title text-cyan"><i class="fa-solid fa-user-shield"></i> Profile Summary</h3>
-                    <p class="about-text">
-                        I am a cybersecurity student currently pursuing my <strong>BTS in Cybersecurity</strong> in Algeria. From a young age, I've been fascinated by how computing networks connect, and more importantly, how they can be fortified against digital threats.
-                    </p>
-                    <p class="about-text">
-                        My primary passion lies in the <strong>Blue Team</strong> domain. I focus on Security Operations Center (SOC) analysis, network forensics, security logging, and incident response. To sharpen my skills, I regularly deploy home labs, run traffic analysis scenarios, and participate in CTF (Capture The Flag) competitions.
-                    </p>
+                    <h1>I detect what<br>attackers try to hide.</h1>
+                    <span class="role">Moncef Messaoudi — Junior SOC Analyst</span>
                     
-                    <div class="personal-details">
-                        <div class="detail-item">
-                            <span class="detail-label">Location:</span>
-                            <span class="detail-val">Algeria</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Interests:</span>
-                            <span class="detail-val">Blue Team, Log Auditing, Wireshark, CTFs</span>
-                        </div>
+                    <!-- Specialty strip -->
+                    <div class="specialty-strip" aria-label="Key Specializations">
+                        <span class="spec-badge">SOC Operations</span>
+                        <span class="spec-badge">Threat Hunting</span>
+                        <span class="spec-badge">Detection Engineering</span>
+                        <span class="spec-badge">Incident Response</span>
+                        <span class="spec-badge">Windows Security</span>
+                        <span class="spec-badge">MITRE ATT&amp;CK</span>
+                    </div>
+
+                    <p class="lead">Cybersecurity student in Algeria, focused on blue team defense, log correlation, and detection engineering. I learn by building — deploying real SIEM tooling, simulating real attacks, and documenting what actually happens.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="assets/Moncef_Messaoudi_Resume.pdf" target="_blank" rel="noopener" class="btn btn-primary" aria-label="Open Moncef's Resume PDF in a new tab">
+                            <i class="fa-solid fa-file-pdf"></i> Resume
+                        </a>
+                        <a href="https://github.com/solaire80" target="_blank" rel="noopener" class="btn btn-ghost" aria-label="View Moncef's GitHub profile">
+                            <i class="fa-brands fa-github"></i> GitHub Profile
+                        </a>
                     </div>
                 </div>
 
-                <!-- Education & Languages -->
-                <div class="about-education-lang reveal">
-                    <!-- Education Card -->
-                    <div class="edu-card card">
-                        <h3 class="card-title text-blue"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="time-duration">Present</span>
-                                <h4 class="timeline-title">BTS in Cybersecurity</h4>
-                                <p class="timeline-org">Vocational Training Institution, Algeria</p>
-                                <p class="timeline-desc">Focusing on network defense, cryptographic systems, OS administration, scripting, and security auditing.</p>
-                            </div>
-                        </div>
+                <!-- Wazuh Alert Live Feed Console -->
+                <div class="console" aria-hidden="true">
+                    <div class="console-bar">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                        <span class="console-title">wazuh — threat-hunting — win10-lap</span>
                     </div>
-
-                    <!-- Languages Card -->
-                    <div class="lang-card card">
-                        <h3 class="card-title text-cyan"><i class="fa-solid fa-language"></i> Languages</h3>
-                        <div class="languages-grid">
-                            <div class="lang-item">
-                                <div class="lang-info">
-                                    <span class="lang-name">Arabic</span>
-                                    <span class="lang-level">Native</span>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar" style="width: 100%;"></div>
-                                </div>
-                            </div>
-                            <div class="lang-item">
-                                <div class="lang-info">
-                                    <span class="lang-name">English</span>
-                                    <span class="lang-level">Professional / Fluent</span>
-                                </div>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar" style="width: 90%;"></div>
-                                </div>
-                            </div>
+                    <div class="console-feed">
+                        <div class="console-track" id="feedTrack">
+                            <!-- Populated dynamically by script.js -->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section section-padding">
-        <div class="container">
-            <div class="section-header center reveal">
-                <span class="section-tag">02 / Technical Stack</span>
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-underline"></div>
-            </div>
-
-            <div class="skills-grid">
-                <!-- Security Operations -->
-                <div class="skills-category card reveal">
-                    <div class="category-header">
-                        <div class="category-icon text-cyan"><i class="fa-solid fa-eye"></i></div>
-                        <h3 class="category-title">Security Operations</h3>
+            <!-- Stats/Metrics Section (Honest measurable achievements) -->
+            <div class="wrap hero-stats-container">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-num">5</span>
+                        <span class="metric-label">Detection Labs Completed</span>
                     </div>
-                    <ul class="skills-list">
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Log Analysis</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Incident Response</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Tools & Environments -->
-                <div class="skills-category card reveal">
-                    <div class="category-header">
-                        <div class="category-icon text-blue"><i class="fa-solid fa-screwdrivers-wrench"></i></div>
-                        <h3 class="category-title">Security &amp; System Tools</h3>
+                    <div class="metric-card">
+                        <span class="metric-num">100+</span>
+                        <span class="metric-label">Security Alerts Investigated</span>
                     </div>
-                    <ul class="skills-list">
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Wireshark</span>
-                                <span>Advanced</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Nmap</span>
-                                <span>Advanced</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Metasploit</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>VirtualBox</span>
-                                <span>Advanced</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Git &amp; GitHub</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Systems & Networking -->
-                <div class="skills-category card reveal">
-                    <div class="category-header">
-                        <div class="category-icon text-cyan"><i class="fa-solid fa-network-wired"></i></div>
-                        <h3 class="category-title">Systems &amp; Networks</h3>
+                    <div class="metric-card">
+                        <span class="metric-num">3</span>
+                        <span class="metric-label">Virtual Machines Deployed</span>
                     </div>
-                    <ul class="skills-list">
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Linux Administration</span>
-                                <span>Advanced</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Windows Security / Event Logs</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>TCP/IP Protocols</span>
-                                <span>Advanced</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Bash Scripting</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-info">
-                                <span>Python for Security</span>
-                                <span>Intermediate</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="metric-card">
+                        <span class="metric-num">1</span>
+                        <span class="metric-label">Complete Home SOC Lab</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-num">Many</span>
+                        <span class="metric-label">Attack Simulations Run</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section section-padding">
-        <div class="container">
-            <div class="section-header center reveal">
-                <span class="section-tag">03 / Case Studies</span>
-                <h2 class="section-title">Projects Portfolio</h2>
-                <div class="section-underline"></div>
+        <!-- About Section -->
+        <section id="about">
+            <div class="wrap">
+                <div class="eyebrow">// About</div>
+                <h2 class="section-title">The short version</h2>
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <p>I'm a <strong>cybersecurity student</strong> in Algeria, one year from completing my <strong>Senior Technician certificate in Cybersecurity</strong>, with coursework focused on network security and authentication protocols (Kerberos, AD trusts, PKI, OAuth/JWT, 802.1X).</p>
+                        <p>Rather than only studying theory, I built a home SOC lab from scratch — deploying Wazuh, integrating Sysmon, and running real attack simulations against it to see what a SOC analyst would actually see, alert by alert.</p>
+                        <p>I'm currently working toward <strong>CompTIA Security+</strong> and looking for a junior SOC role or internship where I can keep learning on real systems.</p>
+                    </div>
+                    <div class="fact-list">
+                        <div class="fact"><span class="k">LOCATION</span><span class="v">Algeria</span></div>
+                        <div class="fact"><span class="k">EDUCATION</span><span class="v">BTS Cybersecurity — 1yr remaining</span></div>
+                        <div class="fact"><span class="k">CERTIFICATION</span><span class="v">CompTIA Security+ (in progress)</span></div>
+                        <div class="fact"><span class="k">LANGUAGES</span><span class="v">Arabic (native), English (fluent)</span></div>
+                        <div class="fact"><span class="k">FOCUS</span><span class="v">Blue Team / SOC Operations</span></div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Filters -->
-            <div class="project-filters reveal">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="blue">Blue Team</button>
-                <button class="filter-btn" data-filter="tools">Red Team / Tools</button>
-                <button class="filter-btn" data-filter="networking">Networking</button>
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="wrap">
+                <div class="eyebrow">// Technical toolkit</div>
+                <h2 class="section-title">Skills &amp; tools</h2>
+                <div class="skill-groups">
+                    <div class="skill-card">
+                        <h3>SIEM &amp; DETECTION</h3>
+                        <div class="chip-row">
+                            <span class="chip">Wazuh</span>
+                            <span class="chip">Threat Hunting</span>
+                            <span class="chip">Log Correlation</span>
+                            <span class="chip">Active Response</span>
+                            <span class="chip">MITRE ATT&amp;CK Mapping</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>ENDPOINT &amp; WINDOWS</h3>
+                        <div class="chip-row">
+                            <span class="chip">Sysmon</span>
+                            <span class="chip">Windows Event Logs</span>
+                            <span class="chip">PowerShell</span>
+                            <span class="chip">Active Directory Basics</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>ATTACK SIMULATION</h3>
+                        <div class="chip-row">
+                            <span class="chip">Metasploit</span>
+                            <span class="chip">Impacket</span>
+                            <span class="chip">Hydra</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>SYSTEMS &amp; NETWORKING</h3>
+                        <div class="chip-row">
+                            <span class="chip">Linux Administration</span>
+                            <span class="chip">TCP/IP</span>
+                            <span class="chip">VirtualBox</span>
+                            <span class="chip">Python</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Grid -->
-            <div class="projects-grid" id="projectsGrid">
+        <!-- Certifications Section -->
+        <section id="certs">
+            <div class="wrap">
+                <div class="eyebrow">// Credentials</div>
+                <h2 class="section-title">Certifications</h2>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-card-header">
+                            <span class="cert-status in-progress"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+                            <i class="fa-solid fa-shield-halved cert-icon"></i>
+                        </div>
+                        <h3>CompTIA Security+</h3>
+                        <p class="cert-desc">Preparing for core exam focusing on threat intelligence, secure network architecture, vulnerability management, and incident response frameworks.</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card-header">
+                            <span class="cert-status planned"><i class="fa-solid fa-clock"></i> Planned</span>
+                            <i class="fa-solid fa-graduation-cap cert-icon"></i>
+                        </div>
+                        <h3>Google Cybersecurity Certificate</h3>
+                        <p class="cert-desc">Targeted training path covering asset identification, security frameworks (NIST), network security audits, and foundational Python scripting for security tasks.</p>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-card-header">
+                            <span class="cert-status current"><i class="fa-solid fa-circle-check"></i> Coursework</span>
+                            <i class="fa-solid fa-network-wired cert-icon"></i>
+                        </div>
+                        <h3>Cisco Networking</h3>
+                        <p class="cert-desc">Hands-on routing and switching modules configured during BTS Cybersecurity coursework. Practical labs in secure subnets, OSPF, and VLAN access control lists.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Cases Section -->
+        <section id="projects">
+            <div class="wrap">
+                <div class="eyebrow">// Portfolio Works</div>
+                <h2 class="section-title">Active Projects &amp; Roadmap</h2>
                 
-                <!-- Project 1: SOC Home Lab -->
-                <div class="project-card reveal" data-category="blue">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-server img-icon"></i>
-                        <span class="overlay-tag">Active Analysis</span>
+                <!-- COMPLETED MAJOR PROJECT: HOME SOC LAB -->
+                <div class="project-block completed">
+                    <div class="project-block-header">
+                        <span class="project-status-badge success-badge"><i class="fa-solid fa-circle-check"></i> COMPLETED</span>
+                        <h3 class="main-project-title">Home SOC Lab &amp; Threat Detection Pipeline</h3>
+                        <p class="project-subtitle-desc">Built and documented an end-to-end telemetry pipeline from SIEM deployment through simulated attacks and automated response mitigation.</p>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Blue Team</span>
-                            <span class="p-difficulty text-red">Advanced</span>
+
+                    <div class="lab-accordion">
+                        <!-- Case 1 -->
+                        <div class="lab-stage">
+                            <div class="stage-num">01</div>
+                            <div class="stage-content">
+                                <h4>Wazuh SIEM Deployment <span class="stage-tag info">Setup</span></h4>
+                                <p>Installed Wazuh 4.12 (all-in-one) on Ubuntu Server, verifying manager, indexer, and dashboard services to establish a central detection backbone.</p>
+                                <a href="https://github.com/solaire80/Home-SOC-Lab/tree/main/Labs/01-Wazuh-Installation" target="_blank" rel="noopener" class="stage-link">View Lab Write-up →</a>
+                            </div>
                         </div>
-                        <h3 class="project-title">SOC Home Lab Deployment</h3>
-                        <p class="project-desc">
-                            Built an isolated virtual SOC lab utilizing PfSense, Snort IDS, Sysmon, and Elastic Stack (ELK) to collect, aggregate, and analyze logs from Windows &amp; Linux nodes.
-                        </p>
-                        <div class="project-tags">
-                            <span>Sysmon</span>
-                            <span>ELK Stack</span>
-                            <span>pfsense</span>
-                            <span>Snort</span>
+
+                        <!-- Case 2 -->
+                        <div class="lab-stage">
+                            <div class="stage-num">02</div>
+                            <div class="stage-content">
+                                <h4>Sysmon Telemetry Integration <span class="stage-tag info">Setup</span></h4>
+                                <p>Deployed Sysmon with the SwiftOnSecurity ruleset on a Windows client, forwarding process creations, network connections, and registry events directly into the SIEM.</p>
+                                <a href="https://github.com/solaire80/Home-SOC-Lab/tree/main/Labs/02-Sysmon-Integration" target="_blank" rel="noopener" class="stage-link">View Lab Write-up →</a>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/soc-home-lab" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+
+                        <!-- Case 3 -->
+                        <div class="lab-stage">
+                            <div class="stage-num">03</div>
+                            <div class="stage-content">
+                                <h4>SMB Authentication Detection <span class="stage-tag med">Alert #92657 • Lvl 6</span></h4>
+                                <p>Simulated remote authentication attacks using Metasploit's <code>smb_login</code> module and built correlation rules in Wazuh to log privilege assignments and track logons.</p>
+                                <a href="https://github.com/solaire80/Home-SOC-Lab/tree/main/Labs/03-SMB-Authentication-Detection" target="_blank" rel="noopener" class="stage-link">View Lab Write-up →</a>
+                            </div>
+                        </div>
+
+                        <!-- Case 4 -->
+                        <div class="lab-stage">
+                            <div class="stage-num">04</div>
+                            <div class="stage-content">
+                                <h4>PsExec Lateral Movement Detection <span class="stage-tag crit">Alert #92650 • Lvl 12</span></h4>
+                                <p>Executed lateral movement with Impacket's <code>psexec</code> to gain SYSTEM shell access. Traced and analyzed process indicators, detecting the anomalous service installation via Wazuh.</p>
+                                <a href="https://github.com/solaire80/Home-SOC-Lab/tree/main/Labs/04-PsExec-Execution" target="_blank" rel="noopener" class="stage-link">View Lab Write-up →</a>
+                            </div>
+                        </div>
+
+                        <!-- Case 5 -->
+                        <div class="lab-stage">
+                            <div class="stage-num">05</div>
+                            <div class="stage-content">
+                                <h4>Brute Force Detection &amp; Active Response <span class="stage-tag high">Alert #60204 • Lvl 10</span></h4>
+                                <p>Conducted SMB brute-force attacks and integrated Wazuh Active Response. Investigated block failures, tracing a logging limitation on the Windows host and documenting the gap.</p>
+                                <a href="https://github.com/solaire80/Home-SOC-Lab/tree/main/Labs/05-Brute-Force-Detection" target="_blank" rel="noopener" class="stage-link">View Lab Write-up →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2: Metasploitable Vuln Assessment -->
-                <div class="project-card reveal" data-category="tools">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-bug-slash img-icon"></i>
-                        <span class="overlay-tag">Pentesting</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Red Team / Tools</span>
-                            <span class="p-difficulty text-orange">Intermediate</span>
+                <!-- ROADMAP / UPCOMING PROJECTS -->
+                <div class="roadmap-section">
+                    <h3 class="roadmap-title">// Project Roadmap (Future Labs)</h3>
+                    <p class="roadmap-desc">High-value security engineering projects I am planning to build next to broaden my forensic and architectural skills.</p>
+                    
+                    <div class="roadmap-grid">
+                        <!-- Project 1 -->
+                        <div class="roadmap-card">
+                            <div class="rm-header">
+                                <span class="rm-badge">ROADMAP</span>
+                                <span class="rm-icon"><i class="fa-solid fa-network-wired"></i></span>
+                            </div>
+                            <h4>Active Directory Attacks &amp; Detection Lab</h4>
+                            <p class="rm-text">Deploying a Windows Server Active Directory domain to simulate and analyze credentials attacks (Kerberoasting, AS-REP roasting) and lateral movement, mapping log event telemetry to MITRE ATT&amp;CK framework logs.</p>
+                            <div class="rm-tech">
+                                <span>Active Directory</span><span>Event Log Auditing</span><span>Kerberos</span>
+                            </div>
                         </div>
-                        <h3 class="project-title">Metasploitable Assessment</h3>
-                        <p class="project-desc">
-                            Conducted an audit on Metasploitable 2. Identified weak services (VSFTPD backdoors, UnrealIRCd exploit), developed custom remediation guidelines, and wrote a report.
-                        </p>
-                        <div class="project-tags">
-                            <span>Nmap</span>
-                            <span>Metasploit</span>
-                            <span>Nessus</span>
-                            <span>Report Writing</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/metasploitable-audit" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 3: Wireshark Traffic Analysis -->
-                <div class="project-card reveal" data-category="blue">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-magnifying-glass-chart img-icon"></i>
-                        <span class="overlay-tag">PCAP Audit</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Blue Team / Net</span>
-                            <span class="p-difficulty text-cyan">Intermediate</span>
+                        <!-- Project 2 -->
+                        <div class="roadmap-card">
+                            <div class="rm-header">
+                                <span class="rm-badge">ROADMAP</span>
+                                <span class="rm-icon"><i class="fa-solid fa-bolt"></i></span>
+                            </div>
+                            <h4>Incident Response Automation with SOAR</h4>
+                            <p class="rm-text">Integrating Shuffle or Tines SOAR with the Wazuh API and VirusTotal. Automating the playbooks to auto-check malicious file hashes, send warning notifications via Slack, and lock down accounts.</p>
+                            <div class="rm-tech">
+                                <span>SOAR Playbooks</span><span>Shuffle</span><span>APIs</span><span>Automation</span>
+                            </div>
                         </div>
-                        <h3 class="project-title">Wireshark Traffic Analysis</h3>
-                        <p class="project-desc">
-                            Analyzed packet captures (PCAP) to identify rogue DHCP servers, malicious ARP poisoning activity, and exfiltrated sensitive data via unencrypted HTTP streams.
-                        </p>
-                        <div class="project-tags">
-                            <span>Wireshark</span>
-                            <span>Tshark</span>
-                            <span>Protocols</span>
-                            <span>Threat Hunting</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/wireshark-pcap-analysis" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 4: Windows Event Log Investigation -->
-                <div class="project-card reveal" data-category="blue">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-file-signature img-icon"></i>
-                        <span class="overlay-tag">Forensics</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Blue Team</span>
-                            <span class="p-difficulty text-orange">Intermediate</span>
-                        </div>
-                        <h3 class="project-title">Windows Event Log Investigation</h3>
-                        <p class="project-desc">
-                            Investigated simulated brute-force attacks and privilege escalations by filtering EVTX event IDs (4625: failures, 4624: successes, 4720: user creation) in PowerShell.
-                        </p>
-                        <div class="project-tags">
-                            <span>Windows Event Viewer</span>
-                            <span>PowerShell</span>
-                            <span>EVTX</span>
-                            <span>Log Auditing</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/windows-evtx-investigation" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Nmap Network Enumeration -->
-                <div class="project-card reveal" data-category="tools">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-radar img-icon"></i>
-                        <span class="overlay-tag">Discovery</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Red Team / Tools</span>
-                            <span class="p-difficulty text-cyan">Beginner</span>
-                        </div>
-                        <h3 class="project-title">Nmap Enumeration &amp; Scripting</h3>
-                        <p class="project-desc">
-                            Developed optimized Nmap scanning profiles. Utilized Nmap Scripting Engine (NSE) to locate CVEs (e.g., MS17-010) on local subnets safely without causing service crashes.
-                        </p>
-                        <div class="project-tags">
-                            <span>Nmap</span>
-                            <span>NSE Scripts</span>
-                            <span>Network Discovery</span>
-                            <span>Bash</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/nmap-enumeration-scripts" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Packet Tracer Labs -->
-                <div class="project-card reveal" data-category="networking">
-                    <div class="project-img-placeholder">
-                        <i class="fa-solid fa-route img-icon"></i>
-                        <span class="overlay-tag">Routing</span>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="p-category">Networking</span>
-                            <span class="p-difficulty text-orange">Intermediate</span>
-                        </div>
-                        <h3 class="project-title">Cisco Packet Tracer Labs</h3>
-                        <p class="project-desc">
-                            Configured subnets, VLANs, Router-on-a-Stick setups, static routing, OSPF, and Access Control Lists (ACLs) to securely segregate departments in enterprise architectures.
-                        </p>
-                        <div class="project-tags">
-                            <span>OSPF</span>
-                            <span>VLANs</span>
-                            <span>Access Lists</span>
-                            <span>Cisco IOS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/messaoudi-moncef-placeholder/packet-tracer-networking" target="_blank" rel="noopener" class="btn btn-icon" aria-label="View Github Repository">
-                                <i class="fa-brands fa-github"></i> Repository
-                            </a>
+                        <!-- Project 3 -->
+                        <div class="roadmap-card">
+                            <div class="rm-header">
+                                <span class="rm-badge">ROADMAP</span>
+                                <span class="rm-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                            <h4>Network Forensics &amp; Custom IDS Signatures</h4>
+                            <p class="rm-text">Analyzing raw packet captures (.pcap) of malicious network traffic (C2 beacons, exploit attempts) using Wireshark and Zeek. Developing custom Suricata IDS rules to detect specific malicious signatures.</p>
+                            <div class="rm-tech">
+                                <span>Wireshark</span><span>Zeek</span><span>Suricata</span><span>IDS Signatures</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Labs, Write-ups & Certifications Section -->
-    <section id="labs" class="labs-certs-section section-padding">
-        <div class="container">
-            <div class="labs-certs-grid">
+        <!-- Write-ups Section (Technical Articles Placeholder) -->
+        <section id="writeups">
+            <div class="wrap">
+                <div class="eyebrow">// Documentation</div>
+                <h2 class="section-title">Technical Write-ups</h2>
+                <p class="section-desc">Technical articles documenting my labs, event log analysis, and threat research.</p>
                 
-                <!-- Labs & Write-ups -->
-                <div class="labs-column reveal">
-                    <div class="section-header">
-                        <span class="section-tag">04 / Learning Logs</span>
-                        <h2 class="section-title">Labs &amp; Write-ups</h2>
-                        <div class="section-underline"></div>
-                    </div>
-                    
-                    <div class="writeups-list">
-                        <!-- THM Write up -->
-                        <div class="writeup-card card">
-                            <div class="writeup-header">
-                                <span class="platform-badge platform-thm">TryHackMe</span>
-                                <span class="writeup-date">Updated July 2026</span>
-                            </div>
-                            <h4 class="writeup-title">Advent of Cyber &amp; SOC Path Labs</h4>
-                            <p class="writeup-description">Documented walkthroughs of SOC Analyst learning path. Topics: Phishing analysis, cyberthreat intel, Snort packet processing.</p>
-                            <a href="https://tryhackme.com/p/messaoudi-moncef-placeholder" target="_blank" rel="noopener" class="writeup-link">
-                                View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-
-                        <!-- HTB Write up -->
-                        <div class="writeup-card card">
-                            <div class="writeup-header">
-                                <span class="platform-badge platform-htb">HackTheBox</span>
-                                <span class="writeup-date">Updated June 2026</span>
-                            </div>
-                            <h4 class="writeup-title">Sherlocks &amp; Blue Labs Walkthroughs</h4>
-                            <p class="writeup-description">DFIR (Digital Forensics &amp; Incident Response) walkthroughs identifying attackers' persistence mechanisms in AD environments.</p>
-                            <a href="https://app.hackthebox.com/users/messaoudi-moncef-placeholder" target="_blank" rel="noopener" class="writeup-link">
-                                View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Certifications -->
-                <div class="certs-column reveal">
-                    <div class="section-header">
-                        <span class="section-tag">05 / Certifications</span>
-                        <h2 class="section-title">My Credentials</h2>
-                        <div class="section-underline"></div>
+                <div class="writeups-grid">
+                    <div class="writeup-card">
+                        <span class="wu-date">AUG 2026</span>
+                        <h3>Detecting PsExec with Wazuh</h3>
+                        <p>A deep dive into process execution logs. Explaining how Sysmon Event ID 1 (Process Creation) and Event ID 11 (File Create) map to MITRE ATT&amp;CK technique T1569.002 to identify lateral movement.</p>
+                        <a href="#" class="btn btn-ghost btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
-                    <div class="certs-container">
-                        <!-- Preparing CompTIA Sec+ -->
-                        <div class="cert-status-card card border-glow-cyan">
-                            <div class="cert-icon-wrapper text-cyan">
-                                <i class="fa-solid fa-award"></i>
-                            </div>
-                            <div class="cert-info">
-                                <div class="cert-badge prep">Preparing</div>
-                                <h3 class="cert-title">CompTIA Security+</h3>
-                                <p class="cert-org">CompTIA</p>
-                                <p class="cert-desc">Focusing on network security, threat mitigation, vulnerability management, host security, and access controls. Targets key areas of SOC fundamentals.</p>
-                                <div class="cert-progress-wrapper">
-                                    <div class="cert-progress-text">
-                                        <span>Exam Study Progress</span>
-                                        <span>~80% Completed</span>
-                                    </div>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="writeup-card">
+                        <span class="wu-date">JUL 2026</span>
+                        <h3>Windows Event ID 4625 Explained</h3>
+                        <p>Breaking down failed logon audit trails. Tracing key log fields like Logon Type (3 vs 10), workstation name, and status codes to differentiate password guessing from typical system errors.</p>
+                        <a href="#" class="btn btn-ghost btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-        <div class="container">
-            <div class="section-header center reveal">
-                <span class="section-tag">06 / Connect</span>
-                <h2 class="section-title">Contact Me</h2>
-                <div class="section-underline"></div>
-            </div>
-
-            <div class="contact-grid">
-                <!-- Details -->
-                <div class="contact-details reveal">
-                    <h3 class="contact-heading">Let's discuss cybersecurity opportunities</h3>
-                    <p class="contact-sub">
-                        I am currently looking for internship opportunities, junior SOC positions, and collaborative security projects. If you have any questions or want to collaborate on CTFs, drop a message!
-                    </p>
-
-                    <div class="contact-info-list">
-                        <a href="mailto:messaoudi.moncef.placeholder@gmail.com" class="info-item">
-                            <div class="info-icon text-cyan"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">Email Me</span>
-                                <span class="info-text">messaoudi.moncef.placeholder@gmail.com</span>
-                            </div>
-                        </a>
-                        <a href="https://linkedin.com/in/messaoudi-moncef-placeholder" target="_blank" rel="noopener" class="info-item">
-                            <div class="info-icon text-blue"><i class="fa-brands fa-linkedin"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">LinkedIn</span>
-                                <span class="info-text">linkedin.com/in/messaoudi-moncef-placeholder</span>
-                            </div>
-                        </a>
-                        <a href="https://github.com/messaoudi-moncef-placeholder" target="_blank" rel="noopener" class="info-item">
-                            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">GitHub Profile</span>
-                                <span class="info-text">github.com/messaoudi-moncef-placeholder</span>
-                            </div>
-                        </a>
+                    <div class="writeup-card">
+                        <span class="wu-date">JUN 2026</span>
+                        <h3>Building a Home SOC Lab</h3>
+                        <p>A step-by-step layout guide to setting up an isolated virtual cybersecurity workspace. Configuring PfSense subnets, virtual network adapters, and allocating node resources securely.</p>
+                        <a href="#" class="btn btn-ghost btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form-container card reveal">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="formName" name="name" class="form-input" required placeholder=" ">
-                            <label for="formName" class="form-label">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="formEmail" name="email" class="form-input" required placeholder=" ">
-                            <label for="formEmail" class="form-label">Your Email Address</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="formSubject" name="subject" class="form-input" required placeholder=" ">
-                            <label for="formSubject" class="form-label">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="formMessage" name="message" class="form-input text-area" required placeholder=" " rows="5"></textarea>
-                            <label for="formMessage" class="form-label">Message details...</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
-                            <i class="fa-solid fa-paper-plane"></i> Send Secure Message
-                        </button>
-                    </form>
-                    
-                    <!-- Alert Message -->
-                    <div class="form-alert" id="formAlert"></div>
+                    <div class="writeup-card">
+                        <span class="wu-date">MAY 2026</span>
+                        <h3>Understanding Sysmon Event ID 1</h3>
+                        <p>How process creation telemetry serves as the baseline for security hunting. Tracking Parent CommandLine, Process GUIDs, and file hashes to find masqueraded malware instances.</p>
+                        <a href="#" class="btn btn-ghost btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="writeup-card">
+                        <span class="wu-date">APR 2026</span>
+                        <h3>SMB Authentication Detection</h3>
+                        <p>Correlating remote logon processes in the SIEM database. Explaining rule sets for matching brute-force attempts across Event ID 4624 (Successful) and 4625 (Failure) sequences.</p>
+                        <a href="#" class="btn btn-ghost btn-sm">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Experience Section (BTS + Projects-focused timeline) -->
+        <section id="experience">
+            <div class="wrap">
+                <div class="eyebrow">// Timeline</div>
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- Exp Item 1 -->
+                    <div class="timeline-item">
+                        <div class="tl-marker"></div>
+                        <div class="tl-content">
+                            <span class="tl-date">2025 — PRESENT</span>
+                            <h3>Cybersecurity Student (BTS Program)</h3>
+                            <span class="tl-org">Vocational Technical Institute</span>
+                            <p>Completing a comprehensive Senior Technician certificate in Cybersecurity. Core training focused on network administration, secure identity mechanisms, Active Directory domains, cryptographic standards, and authentication protocols.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 2 -->
+                    <div class="timeline-item">
+                        <div class="tl-marker"></div>
+                        <div class="tl-content">
+                            <span class="tl-date">2026</span>
+                            <h3>Detection Engineer &amp; Home Lab Architect</h3>
+                            <span class="tl-org">Self-Directed Learning</span>
+                            <p>Designed and deployed an isolated threat auditing pipeline inside VirtualBox. Installed Wazuh managers, integrated endpoint agents, configured custom event filters (Sysmon, Windows Event Logs), and simulated active threat models.</p>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 3 -->
+                    <div class="timeline-item">
+                        <div class="tl-marker"></div>
+                        <div class="tl-content">
+                            <span class="tl-date">2025 — PRESENT</span>
+                            <h3>Active Platform Competitor</h3>
+                            <span class="tl-org">TryHackMe &amp; HackTheBox</span>
+                            <p>Investigating cybersecurity walk-through rooms, parsing packet analysis captures (.pcap), decoding malware patterns, and solving threat hunting scenarios. Mapped active attack stages to MITRE ATT&amp;CK frames.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="wrap">
+                <div class="eyebrow">// Get in touch</div>
+                <h2 class="section-title">Let's talk</h2>
+                <div class="contact-inner">
+                    <p>I'm actively looking for a junior SOC Analyst role or internship. If you're hiring, or just want to talk detection engineering, reach out.</p>
+                    <div class="contact-links">
+                        <a href="mailto:messaoudi.moncef80@gmail.com" class="btn btn-primary" aria-label="Send email to Moncef">Email me</a>
+                        <a href="https://www.linkedin.com/in/moncef-messaoudi-9a332385" class="btn btn-ghost" target="_blank" rel="noopener" aria-label="Open Moncef's LinkedIn profile in a new tab">LinkedIn</a>
+                        <a href="https://github.com/solaire80" class="btn btn-ghost" target="_blank" rel="noopener" aria-label="Open Moncef's GitHub profile in a new tab">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p class="copyright">&copy; 2026 Messaoudi Moncef. All rights reserved. Secured and Encrypted.</p>
-            <div class="footer-socials">
-                <a href="https://github.com/messaoudi-moncef-placeholder" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/messaoudi-moncef-placeholder" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:messaoudi.moncef.placeholder@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    <footer>
+        <div class="wrap footer-wrap">
+            <p>&copy; 2026 Moncef Messaoudi — Built with HTML, CSS &amp; JavaScript</p>
+            <div class="socials">
+                <a href="https://github.com/solaire80" target="_blank" rel="noopener" aria-label="GitHub Profile">GitHub</a>
+                <a href="https://www.linkedin.com/in/moncef-messaoudi-9a332385" target="_blank" rel="noopener" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="mailto:messaoudi.moncef80@gmail.com" aria-label="Send Email">Email</a>
+                <a href="assets/Moncef_Messaoudi_Resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume PDF">Resume Download</a>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll To Top Button -->
-    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Scroll to Top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
